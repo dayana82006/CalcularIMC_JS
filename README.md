@@ -1,1 +1,1 @@
-# CalcularIMC_JS
+# ejercicio1_js
