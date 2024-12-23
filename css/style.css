@@ -1,47 +1,93 @@
+/* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    background: linear-gradient(to bottom right, #4CAF50, #81C784);
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f8ff;
 }
+
 .container {
-    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
     padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
 }
-input[type="text"], input[type="number"] {
-    width: 80%;
-    padding: 8px;
-    margin: 10px 0;
-    border-radius: 5px;
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
     border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    box-sizing: border-box;
 }
+
 button {
-    padding: 10px 20px;
     background-color: #4CAF50;
-    color: white;
+    color: #fff;
+    padding: 10px 15px;
     border: none;
     border-radius: 5px;
+    font-size: 16px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
+
 button:hover {
-    background-color: #45a049;
+    background-color: #45A049;
 }
+
 .result {
     margin-top: 20px;
     font-size: 18px;
     font-weight: bold;
+    color: #4CAF50;
 }
+
 .imc-image {
     margin-top: 20px;
-    width: auto;
-    height: 300px;
-    margin-left: -150px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    input {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    .result {
+        font-size: 16px;
+    }
 }
