@@ -1,4 +1,4 @@
-# Calcular IMC 
+
 
 # 🧮 **Calculadora IMC** (Índice de Masa Corporal) 💪
 
